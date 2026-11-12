@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mind Matters — a welcoming space for mental health awareness, self-care, and support.">
+<title>Mind Matters | Mental Health Awareness</title>
+<style>
+:root{--green:#557765;--deep:#29483b;--mint:#dce9df;--cream:#fbfaf5;--ink:#26352e;--muted:#65736b;--white:#fff;--peach:#f4e4d8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+header{position:sticky;top:0;z-index:10;background:rgba(251,250,245,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e7e9e1}
+.nav{max-width:1120px;margin:auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px;color:var(--deep);font-size:1.1rem;text-decoration:none}
+.brand-mark{width:36px;height:36px;border-radius:50%;background:var(--mint);display:grid;place-items:center;color:var(--deep);font-size:20px}
+nav{display:flex;gap:22px;flex-wrap:wrap}nav a{color:var(--muted);text-decoration:none;font-size:.92rem;font-weight:600}nav a:hover{color:var(--green)}
+.hero{max-width:1120px;margin:auto;padding:76px 24px 70px;display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+.eyebrow{color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.76rem}
+h1{font-size:clamp(2.7rem,6vw,5rem);line-height:1.04;letter-spacing:-2px;margin:14px 0 22px;color:var(--deep)}
+.hero p{font-size:1.12rem;color:var(--muted);max-width:580px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:13px 20px;border-radius:999px;background:var(--green);color:white;text-decoration:none;font-weight:700;border:2px solid var(--green);cursor:pointer}
+.btn.secondary{background:transparent;color:var(--deep);border-color:#b9c9bd}
+.art{min-height:340px;border-radius:48% 52% 43% 57% / 47% 43% 57% 53%;background:var(--mint);display:grid;place-items:center;position:relative;overflow:hidden}
+.art:before,.art:after{content:"";position:absolute;border:1px solid #a9c0ae;border-radius:50%;width:270px;height:270px}
+.art:after{width:330px;height:330px}
+.art-inner{position:relative;z-index:1;text-align:center;color:var(--deep);padding:30px}
+.art-symbol{font-size:104px;line-height:1}
+.art-inner strong{display:block;font-family:Georgia,serif;font-size:1.5rem;margin-top:12px}
+section{padding:72px 24px}
+.wrap{max-width:1040px;margin:auto}
+.section-head{text-align:center;max-width:680px;margin:0 auto 38px}
+h2{font-family:Georgia,serif;color:var(--deep);font-size:clamp(2rem,4vw,3rem);line-height:1.15;margin:8px 0 14px}
+.section-head p,.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border:1px solid #e8ebe4;border-radius:22px;padding:25px;box-shadow:0 8px 24px rgba(41,72,59,.045)}
+.card .icon{font-size:1.8rem}
+.card h3{color:var(--deep);margin:12px 0 8px}
+.soft{background:#f0f4ed}
+.quote-box{max-width:760px;margin:auto;background:var(--deep);color:white;border-radius:28px;padding:42px;text-align:center}
+.quote-box .eyebrow{color:#c6dccb}
+#quote{font-family:Georgia,serif;font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.35;margin:18px 0 24px}
+.quote-box .btn{background:#e1eee3;color:var(--deep);border-color:#e1eee3}
+.steps{counter-reset:step}
+.step{display:flex;gap:18px;align-items:flex-start;margin:20px 0}
+.number{flex:0 0 40px;height:40px;border-radius:50%;background:var(--mint);color:var(--deep);display:grid;place-items:center;font-weight:800}
+.support{background:#f7eee7}
+.note{font-size:.9rem;color:var(--muted);background:#fff;border-left:4px solid #b5c9b9;padding:14px 18px;border-radius:8px}
+footer{background:#203b30;color:#eaf1eb;padding:34px 24px;text-align:center}
+footer p{margin:6px auto;max-width:700px;color:#c7d5cb;font-size:.9rem}
+@media(max-width:760px){.nav{align-items:flex-start;flex-direction:column}.hero{grid-template-columns:1fr;padding-top:52px}.art{min-height:260px}.grid{grid-template-columns:1fr}.hero h1{letter-spacing:-1px}nav{gap:13px}section{padding:56px 20px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" href="#home"><span class="brand-mark">✿</span> Mind Matters</a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#learn">Learn</a><a href="#selfcare">Self-care</a><a href="#inspiration">Inspiration</a><a href="#support">Get support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div>
+    <div class="eyebrow">Mental health awareness</div>
+    <h1>Your mind matters. So do you.</h1>
+    <p>A gentle reminder that every feeling deserves care, every person deserves understanding, and asking for support is a sign of strength.</p>
+    <div class="actions"><a class="btn" href="#learn">Explore and learn</a><a class="btn secondary" href="#selfcare">Small self-care steps</a></div>
+  </div>
+  <div class="art" aria-label="Decorative illustration">
+    <div class="art-inner"><div class="art-symbol">☘</div><strong>It's okay to<br>not be okay.</strong></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap section-head">
+    <div class="eyebrow">A little about us</div>
+    <h2>A space for awareness and understanding</h2>
+    <p>Mind Matters is a mental health awareness website created to encourage open conversations, reduce stigma, and remind people that they are not alone.</p>
+  </div>
+  <div class="wrap grid">
+    <article class="card"><div class="icon">♡</div><h3>Understanding</h3><p class="muted">Mental health is part of our overall well-being. It can affect how we think, feel, learn, and connect with others.</p></article>
+    <article class="card"><div class="icon">☘</div><h3>Kindness</h3><p class="muted">Listen without judging. A small act of patience or care can help someone feel seen and respected.</p></article>
+    <article class="card"><div class="icon">✧</div><h3>Hope</h3><p class="muted">Hard days do not define a person. With support and time, things can become more manageable.</p></article>
+  </div>
+</section>
+
+<section class="soft" id="learn">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Learn</div><h2>Mental health matters every day</h2><p>Here are a few important things to remember.</p></div>
+    <div class="grid">
+      <article class="card"><h3>Everyone has mental health</h3><p class="muted">Mental health is important for everyone, just like physical health. It can change throughout life.</p></article>
+      <article class="card"><h3>Feelings are valid</h3><p class="muted">It is normal to experience different emotions. You do not need to pretend to be happy all the time.</p></article>
+      <article class="card"><h3>Support can help</h3><p class="muted">Talking with a trusted person or qualified professional can be a helpful step when things feel difficult.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="selfcare">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Self-care corner</div><h2>Small steps count</h2><p>Self-care does not have to be expensive or complicated. Try what feels realistic for you.</p></div>
+    <div class="grid">
+      <article class="card"><div class="icon">☀</div><h3>Take a gentle break</h3><p class="muted">Pause for a few minutes, stretch, breathe slowly, or step somewhere quiet.</p></article>
+      <article class="card"><div class="icon">♫</div><h3>Enjoy something you like</h3><p class="muted">Listen to music, draw, read, play a game, or spend time on a hobby.</p></article>
+      <article class="card"><div class="icon">☕</div><h3>Care for your basics</h3><p class="muted">Drink water, eat regularly, get rest, and move in ways that feel comfortable.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="soft" id="inspiration">
+  <div class="quote-box">
+    <div class="eyebrow">A reminder for today</div>
+    <div id="quote">You deserve the same kindness you give to others.</div>
+    <button class="btn" type="button" onclick="newQuote()">Another reminder</button>
+  </div>
+</section>
+
+<section class="support" id="support">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">You don't have to do it alone</div><h2>Reaching out is okay</h2><p>If you are having a difficult time, consider talking to someone you trust, such as a family member, teacher, school counselor, or health professional.</p></div>
+    <div class="card">
+      <h3>If someone may be in immediate danger</h3>
+      <p class="muted">Seek help from a trusted adult right away and contact local emergency services or go to the nearest emergency department. If you are supporting a friend, stay with them while getting help from a responsible adult.</p>
+      <p class="note">This website is for general awareness and education. It is not a substitute for professional mental health advice, diagnosis, or treatment.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="brand" style="justify-content:center;color:#eaf1eb"><span class="brand-mark">✿</span> Mind Matters</div>
+  <p>It's okay to pause. It's okay to ask for help. Your mental health matters.</p>
+  <p>Made for awareness, kindness, and understanding.</p>
+</footer>
+<script>
+const quotes=[
+"You deserve the same kindness you give to others.",
+"Taking a break does not mean giving up.",
+"You do not have to figure everything out today.",
+"Small steps are still progress.",
+"Your feelings deserve to be heard.",
+"Needing support does not make you weak."
+];
+function newQuote(){let q=document.getElementById('quote'),next;do{next=quotes[Math.floor(Math.random()*quotes.length)]}while(next===q.textContent);q.textContent=next}
+</script>
+</body>
+</html>
